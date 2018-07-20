@@ -1,0 +1,68 @@
+{
+  "name": "silverstripe-reactfield",
+  "version": "1.0.0",
+  "description": "React field boilerplate for SS4",
+  "main": "client/dist/bundle.js",
+  "engines": {
+    "node": "6"
+  },
+  "scripts": {
+    "dev": "webpack",
+    "watch": "webpack --watch",
+    "build": "webpack -p",
+    "unit:test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueo/silverstripe-reactfield.git"
+  },
+  "keywords": [
+    "silverstripe",
+    "react",
+    "field",
+    "formfield"
+  ],
+  "author": "Bernie Hamlin",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/blueo/silverstripe-reactfield/issues"
+  },
+  "homepage": "https://github.com/blueo/silverstripe-reactfield#readme",
+  "devDependencies": {
+    "@silverstripe/webpack-config": "^0.5.1",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-loader": "^7.1.4",
+    "dotenv": "^4.0.0",
+    "eslint": "^4.x.x",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "extract-text-webpack-plugin": "2.1.2",
+    "glob": "^7.1.2",
+    "jest": "^22.4.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.2"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/client/src/"
+    ],
+    "modulePaths": [
+      "node_modules",
+      "../../silverstripe/admin/client/src",
+      "../../silverstripe/admin/node_modules"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  }
+}

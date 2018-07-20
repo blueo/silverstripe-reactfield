@@ -65,8 +65,6 @@ class ReactField extends FormField
     public function getSchemaDataDefaults()
     {
         $defaults = parent::getSchemaDataDefaults();
-        // Dropdown prop for configuring dropdown field
-        $defaults['dropdown'] = $this->testTree->getSchemaData();
 
         return $defaults;
     }

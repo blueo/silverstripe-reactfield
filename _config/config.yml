@@ -2,7 +2,7 @@
 Name: reactfield
 ---
 SilverStripe\Admin\LeftAndMain:
-  extra_requirements_js:
-    - 'blueo/silverstripe-reactfield:client/dist/js/bundle.css'
+  extra_requirements_javascript:
+    - 'blueo/silverstripe-reactfield:client/dist/js/bundle.js'
   extra_requirements_css:
     - 'blueo/silverstripe-reactfield:client/dist/styles/styles.css'

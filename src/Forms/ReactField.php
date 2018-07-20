@@ -1,6 +1,6 @@
 <?php
 
-namespace Blueo\Forms;
+namespace Blueo\ReactField\Forms;
 
 use SilverStripe\Forms\FormField;
 use SilverStripe\View\Requirements;
